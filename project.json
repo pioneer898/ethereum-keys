@@ -1,0 +1,83 @@
+{
+	"contentrating" : "Everyone",
+	"description" : "Fun Ethereum key generator.\nNote: This is NOT considered a secure way to generate Ethereum wallets.",
+	"file" : "index.html",
+	"general" : 
+	{
+		"properties" : 
+		{
+			"enableqrcode" : 
+			{
+				"index" : 2,
+				"order" : 102,
+				"text" : "Enable QR Code",
+				"type" : "bool",
+				"value" : true
+			},
+			"mode" : 
+			{
+				"index" : 0,
+				"options" : 
+				[
+					{
+						"label" : "Mouse",
+						"value" : "mouse"
+					},
+					{
+						"label" : "Random",
+						"value" : "random"
+					},
+					{
+						"label" : "Seqential",
+						"value" : "sequential"
+					},
+					{
+						"label" : "Audio",
+						"value" : "audio"
+					}
+				],
+				"order" : 100,
+				"text" : "Mode",
+				"type" : "combo",
+				"value" : "mouse"
+			},
+			"schemecolor" : 
+			{
+				"order" : 0,
+				"text" : "ui_browse_properties_scheme_color",
+				"type" : "color",
+				"value" : "0 0 0"
+			},
+			"speed" : 
+			{
+				"condition" : "mode.value != 'mouse'",
+				"fraction" : false,
+				"index" : 1,
+				"max" : 1000,
+				"min" : 1,
+				"order" : 101,
+				"text" : "Keys per Second",
+				"type" : "slider",
+				"value" : 10
+			},
+			"startingkey" : 
+			{
+				"condition" : "mode.value == 'sequential'",
+				"index" : 3,
+				"order" : 103,
+				"text" : "Starting Key",
+				"type" : "textinput",
+				"value" : ""
+			}
+		},
+		"supportsaudioprocessing" : true
+	},
+	"preview" : "preview.jpg",
+	"tags" : [ "Technology" ],
+	"title" : "Ethereum Keys",
+	"type" : "Web",
+	"version" : 2,
+	"visibility" : "public",
+	"workshopid" : "2575289669",
+	"workshopurl" : "steam://url/CommunityFilePage/2575289669"
+}
