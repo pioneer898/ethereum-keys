@@ -12,4 +12,8 @@ Uses four primary methods of establishing an Ethereum private key string:
 
 # Features
 * Configurable generation rates
-* Optional QR code generated that links to wallet information at https://etherscan.io 
+* Optional QR code generated that links to wallet information at https://etherscan.io
+
+# References
+* [Ethers](https://github.com/ethers-io/ethers.js)
+* [QR Code JS](https://github.com/davidshimjs/qrcodejs)
